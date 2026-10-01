@@ -125,7 +125,7 @@ function MusicPlayer() {
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      <audio ref={audioRef} src="./assets/music/bgm.mp3" loop />
+      <audio ref={audioRef} src="./assets/music/Albumaty.Com.Elissa.7ob.kol.7ayaty.mp3" loop />
       <button 
         onClick={togglePlay}
         className="w-12 h-12 flex items-center justify-center rounded-full glass hover:bg-white/10 transition-colors"
