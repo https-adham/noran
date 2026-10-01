@@ -3,7 +3,7 @@ import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 import { cn } from './utils';
 
-const photos = Array.from({ length: 17 }, (_, i) => `/assets/photos/photo${i + 1}.jpeg`);
+const photos = Array.from({ length: 17 }, (_, i) => `./assets/photos/photo${i + 1}.jpeg`);
 
 const captions = [
   "Simply beautiful. ❤️",
@@ -125,7 +125,7 @@ function MusicPlayer() {
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      <audio ref={audioRef} src="/assets/music/bgm.mp3" loop />
+      <audio ref={audioRef} src="./assets/music/bgm.mp3" loop />
       <button 
         onClick={togglePlay}
         className="w-12 h-12 flex items-center justify-center rounded-full glass hover:bg-white/10 transition-colors"
