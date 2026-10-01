@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-midnight text-gray-100 antialiased overflow-x-hidden m-0 p-0;
+  }
+}
+
+/* Custom Utilities for cinematic feel */
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.text-glow-pink {
+  text-shadow: 0 0 20px rgba(244, 114, 182, 0.4);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
